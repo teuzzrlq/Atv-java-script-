@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoa Mais Nova</title>
+    <script>
+        function encontrarPessoaMaisNova() {
+            let nomeMaisNovo = "";
+            let idadeMaisNova = Infinity; 
+            let totalPessoas = 10;
+
+            for (let i = 1; i <= totalPessoas; i++) {
+                let nome = prompt(Digite o nome da pessoa ${i}:);
+                let idade = parseInt(prompt(Digite a idade de ${nome}:));
+                
+                if (idade < idadeMaisNova) {
+                    idadeMaisNova = idade;
+                    nomeMaisNovo = nome;
+                }
+            }
+
+          
+            document.getElementById("resultado").innerHTML = A pessoa mais nova é: ${nomeMaisNovo} com ${idadeMaisNova} anos.;
+        }
+    </script>
+</head>
+<body>
+    <h1>Pessoa Mais Nova</h1>
+    <p>Clique no botão abaixo para começar a inserir os nomes e idades das 10 pessoas.</p>
+    
+    <button onclick="encontrarPessoaMaisNova()">Iniciar Contagem</button>
+    
+    <p id="resultado"></p>
+    </body>
+    </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+    <script>
+        function calcularSoma() {
+            let soma = 0;
+
+           
+            for (let i = 1; i <= 10; i++) {
+                let numero = parseInt(prompt("Digite o " + i + "º número:"));
+                soma += numero; 
+            }
+
+            
+            document.getElementById("resultado").innerText = "A soma dos 10 números é: " + soma;
+        }
+    </script>
+</head>
+<body onload="calcularSoma()">
+    <h1>Cálculo da Soma</h1>
+    <div id="resultado"></div>
+</body>
+</html>

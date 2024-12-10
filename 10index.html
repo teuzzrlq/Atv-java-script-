@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada de Multiplicação</title>
+    <script>
+        function exibirTabuada() {
+            let numero = parseInt(prompt("Digite um número para ver sua tabuada de multiplicação:"));
+            let resultado = "";
+
+         
+            for (let i = 1; i <= 10; i++) {
+                resultado += ${numero} x ${i} = ${numero * i}<br>;
+            }
+
+           
+            document.getElementById("tabuada").innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <h1>Tabuada de Multiplicação</h1>
+    <p>Clique no botão abaixo para digitar um número e ver a sua tabuada.</p>
+    
+    <button onclick="exibirTabuada()">Ver Tabuada</button>
+    
+    <div id="tabuada"></div> 
+</body>
+</html>

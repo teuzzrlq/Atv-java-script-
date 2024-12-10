@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Repetida</title>
+    <script>
+        
+        function exibirMensagem() {
+            let mensagem = "Eu gosto de estudar Algoritmos!";
+            let output = '';
+
+            
+            for (let i = 1; i <= 20; i++) {
+                output += mensagem + '<br>'; 
+            }
+
+           
+            document.getElementById("resultado").innerHTML = output;
+        }
+    </script>
+</head>
+<body onload="exibirMensagem()">
+    <h1>Exibição de Mensagens</h1>
+    <div id="resultado"></div>
+</body>
+</html>

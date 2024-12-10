@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando de 1 a 15</title>
+    <script>
+        function calcularSoma() {
+            let soma = 0;
+
+            
+            for (let i = 1; i <= 15; i++) {
+                soma += i;  
+            }
+
+            
+            document.getElementById("resultado").innerText = "A soma dos números de 1 a 15 é: " + soma;
+        }
+    </script>
+</head>
+<body onload="calcularSoma()">
+    <h1>Resultado da Soma</h1>
+    <div id="resultado"></div>
+</body>
+</html>

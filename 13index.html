@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantos Números Estão Entre 0 e 100</title>
+    <script>
+        function contarEntreZeroE100() {
+            let entreZeroE100 = 0;
+
+            for (let i = 1; i <= 20; i++) {
+                let numero = parseInt(prompt(Digite o ${i}º número:));
+                
+              
+                if (numero >= 0 && numero <= 100) {
+                    entreZeroE100++;
+                }
+            }
+
+            
+            document.getElementById("resultado").innerHTML = Quantidade de números entre 0 e 100: ${entreZeroE100};
+        }
+    </script>
+</head>
+<body>
+    <h1>Contar Números Entre 0 e 100</h1>
+    <button onclick="contarEntreZeroE100()">Iniciar Contagem</button>
+    
+    <p id="resultado"></p> 
+
+</body>
+</html>

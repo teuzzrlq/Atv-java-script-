@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantos Números São Pares</title>
+    <script>
+        function contarNumerosPares() {
+            let pares = 0;
+
+            for (let i = 1; i <= 20; i++) {
+                let numero = parseInt(prompt(Digite o ${i}º número:));
+                
+               
+                if (numero % 2 === 0) {
+                    pares++;
+                }
+            }
+
+          
+            document.getElementById("resultado").innerHTML = Quantidade de números pares: ${pares};
+        }
+    </script>
+</head>
+<body>
+    <h1>Contar Números Pares</h1>
+    <button onclick="contarNumerosPares()">Iniciar Contagem</button>
+    
+    <p id="resultado"></p> 
+
+</body>
+</html>
